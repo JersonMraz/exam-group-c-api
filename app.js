@@ -14,5 +14,3 @@ app.use('/', examRoutes);
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
-
-// THIS COMMENT WILL RESOLVE FOR CONFLICT SIMULATION
