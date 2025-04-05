@@ -28,4 +28,13 @@ router.put('/exams/:id', (req, res) => {
     exams[examIndex] = { ...exams[examIndex], ...updatedExam }; // Update the exam
     res.status(200).json({ message: 'Exam updated successfully', exam: exams[examIndex] });
 });
+
+// MABANO: GET /exams (returns a hardcoded list of exams)
+router.get('/exams', (req, res) => {
+    res.status(200).json({ exams });
+});
+
+router.get('/exams-group', (req, res) => {
+    res.json({message: "Group C API"});
+});
 module.exports = router;
